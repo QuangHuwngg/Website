@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Copyright © 2022 QuangHuwngg</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="container a-container" id="a-container">
+      <form class="form form-login" id="a-form" method="" action="">
+        <h2 class="form_title title">Đăng Nhập</h2>
+        <input class="form__input" type="text" id="tk" placeholder="Mã Định Danh">
+        <input class="form__input" type="password" id="mk" placeholder="Mật Khẩu">
+        <button class="switch__button button switch-btn" onclick="check()"><a href="#">Đăng Nhập</a></button><br>
+        <a class="creat" href="g/create.html">Đăng kí</a>
+      </form>
+    </div>
+    <div class="container b-container" id="b-container">
+      <form class="form form-creat" id="b-form" action="https://formsubmit.co/quanghuwngg@gmail.com" method="POST">
+        <h2 class="form_title title">Tạo Tài Khoản</h2>
+        <input class="form__input" type="text" name="Mã Định Danh" placeholder="Mã Định Danh" required>
+        <input class="form__input" type="password" name="Mật Khẩu" placeholder="Mật Khẩu" required>
+        <div class="inline"><input class="form__inputmin" type="number" name="Toán" placeholder="Điểm Toán" required><input class="form__inputmin" type="number" name="Văn" placeholder="Điểm Văn" required><input class="form__inputmin" type="number" name="Anh" placeholder="Điểm Anh" required></div>
+        <button class="switch__button button">Đăng Kí</button>
+        <a class="creat" href="../index.html">Đăng Nhập</a>
+      </form>
+    </div>
+    <div class="none">
+      <div class="switch" id="switch-cnt">
+        <div class="switch__circle"></div>
+        <div class="switch__circle switch__circle--t"></div>
+        <div class="switch__container" id="switch-c1">
+          <h2 class="switch__title title">Chào Mừng!</h2>
+          <p class="switch__description description">Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+          <button class="switch__button button switch-btn">Đăng Kí</button>
+        </div>
+        <div class="switch__container is-hidden" id="switch-c2">
+          <h2 class="switch__title title">Chào bạn!</h2>
+          <p class="switch__description description">Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+          <button class="switch__button button switch-btn">Đăng Nhập</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/check.js"></script>
+</body>
+</html>
